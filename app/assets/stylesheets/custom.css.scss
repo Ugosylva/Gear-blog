@@ -21,8 +21,9 @@ $navbar-default-bg: black;
 	text-align: center;
 	 background-image: url("wallpaper14.jpg");
 	background-size: cover;
-	height:600px;
+	height:400px;
 }
+
 
 .Dev {
 	text-align: center;
@@ -62,6 +63,12 @@ $navbar-default-bg: black;
 .article-actions {
 	border-top: 1px solid #eaeaea;
 	padding-top: 5px;
+}
+
+.listing {
+    text-align: center;
+	list-style: none;
+	padding-left: 0;
 }
 
 footer {
