@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_action :require_same_user, only: [:edit, :update, :destroy]
   before_action :require_admin, only: [:destroy]
   def index
-  	@users = User.paginate(page: params[:page], per_page: 3)
+  	@users = User.all
   end
 
 
@@ -36,7 +36,7 @@ def update
 end
 
 def show
-  @user_articles = @user.articles.paginate(page: params[:page], per_page: 2)
+  @user_articles = @user.articles
 end
 
 def destroy
